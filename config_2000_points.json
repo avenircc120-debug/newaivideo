@@ -1,0 +1,252 @@
+{
+  "_info": {
+    "nom": "Cerveau — Réalité Totale 2026",
+    "version": "1.0",
+    "total_points": 2000,
+    "description": "Fichier maître des 2000 points. Lu à chaque démarrage. Ne pas modifier manuellement."
+  },
+
+  "A_biologie": {
+    "description": "Système Biologie — Points 1 à 400",
+
+    "micro_vascularite": {
+      "points": "1-100",
+      "default": 0.5,
+      "description": "Changement de couleur de peau selon effort et chaleur",
+      "surcharges": {
+        "chaleur_forte":   0.85,
+        "effort_sport":    0.90,
+        "repos":           0.30,
+        "pluie":           0.40
+      }
+    },
+
+    "muscles_tendons": {
+      "points": "101-200",
+      "default": 0.3,
+      "description": "Tension des mains sur le volant ou le guidon",
+      "surcharges": {
+        "volant_voiture":  0.75,
+        "guidon_moto":     0.85,
+        "marche":          0.40,
+        "vitesse_120kmh":  0.90
+      }
+    },
+
+    "fluides": {
+      "points": "201-300",
+      "default": 0.2,
+      "description": "Sueur réelle qui coule et éclat humide des yeux",
+      "surcharges": {
+        "pluie":           0.95,
+        "sueur_sport":     0.80,
+        "humidite_normale":0.35,
+        "sec":             0.10
+      }
+    },
+
+    "friction": {
+      "points": "301-400",
+      "default": 0.4,
+      "description": "Cheveux qui s'emmêlent naturellement avec le vent",
+      "surcharges": {
+        "vent_fort":       0.90,
+        "vitesse_120kmh":  0.95,
+        "brise_legere":    0.55,
+        "sans_vent":       0.15
+      }
+    }
+  },
+
+  "B_physique_vehicules": {
+    "description": "Système Physique et Véhicules — Points 401 à 800",
+
+    "masse_gravite": {
+      "points": "401-500",
+      "default": 0.7,
+      "description": "Le siège ou la selle s'écrase sous le poids",
+      "surcharges": {
+        "voiture_assis":   0.85,
+        "moto_assis":      0.90,
+        "debout":          0.50
+      }
+    },
+
+    "aerodynamisme": {
+      "points": "501-600",
+      "default": 0.0,
+      "description": "Habits qui se plaquent sur la peau avec la vitesse",
+      "surcharges": {
+        "vitesse_120kmh":  0.95,
+        "vitesse_60kmh":   0.60,
+        "vitesse_30kmh":   0.30,
+        "immobile":        0.00
+      }
+    },
+
+    "collision": {
+      "points": "601-700",
+      "default": 1.0,
+      "description": "Pas de traversée d'objets — mains sur le volant, pieds au sol",
+      "surcharges": {
+        "toujours_actif":  1.0
+      }
+    },
+
+    "thermodynamique": {
+      "points": "701-800",
+      "default": 0.3,
+      "description": "Mirage de chaleur au-dessus du moteur",
+      "surcharges": {
+        "plein_soleil":    0.85,
+        "soleil_couchant": 0.50,
+        "nuit":            0.10,
+        "pluie":           0.05
+      }
+    }
+  },
+
+  "C_optique": {
+    "description": "Système Optique — Points 801 à 1100",
+
+    "ray_tracing_4k": {
+      "points": "801-900",
+      "default": 0.9,
+      "description": "Reflets de la foire dans les yeux et sur la peinture du véhicule",
+      "surcharges": {
+        "plein_soleil":    0.95,
+        "nuit":            0.85,
+        "nuageux":         0.70
+      }
+    },
+
+    "caustiques": {
+      "points": "901-1000",
+      "default": 0.5,
+      "description": "Lumière qui change à travers les vitres ou la visière",
+      "surcharges": {
+        "pluie":           0.90,
+        "vitre_mouille":   0.95,
+        "soleil_direct":   0.80,
+        "nuit":            0.60
+      }
+    },
+
+    "atmosphere": {
+      "points": "1001-1100",
+      "default": 0.4,
+      "description": "Poussière éclairée par les rayons du soleil",
+      "surcharges": {
+        "route_seche":     0.75,
+        "pluie":           0.10,
+        "marche_foule":    0.60,
+        "route_mouille":   0.05
+      }
+    }
+  },
+
+  "D_cognition": {
+    "description": "Système Cognition — Points 1101 à 1500",
+
+    "micro_saccades": {
+      "points": "1101-1200",
+      "default": 0.6,
+      "description": "Les yeux bougent pour scanner la route ou la foule",
+      "surcharges": {
+        "foule_foire":     0.90,
+        "route_vide":      0.50,
+        "vitesse_haute":   0.70
+      }
+    },
+
+    "proprioception": {
+      "points": "1201-1300",
+      "default": 0.5,
+      "description": "Équilibre du corps dans les virages",
+      "surcharges": {
+        "virage_moto":     0.90,
+        "marche_droite":   0.55,
+        "voiture_stable":  0.60
+      }
+    },
+
+    "hesitation": {
+      "points": "1301-1500",
+      "default": 0.2,
+      "description": "Micro-mouvements humains (respiration, tics) de 0.2 secondes",
+      "surcharges": {
+        "marche_naturelle":0.40,
+        "conduite":        0.20,
+        "foule_dense":     0.50
+      }
+    }
+  },
+
+  "E_cinema": {
+    "description": "Système Cinéma — Points 1501 à 2000",
+
+    "capteur_arri_alexa": {
+      "points": "1501-1700",
+      "default": 0.85,
+      "description": "Rendu Arri Alexa avec grain argentique",
+      "surcharges": {
+        "jour":            0.85,
+        "nuit":            0.90,
+        "golden_hour":     0.95
+      }
+    },
+
+    "espace_couleur_rec2020": {
+      "points": "1701-1850",
+      "default": 1.0,
+      "description": "Standard REC.2020 HDR — couleurs réelles du Bénin",
+      "surcharges": {
+        "toujours_actif":  1.0
+      }
+    },
+
+    "optique_bokeh": {
+      "points": "1851-2000",
+      "default": 0.7,
+      "description": "Flou de profondeur (Bokeh) et reflets de lentille",
+      "surcharges": {
+        "portrait":        0.90,
+        "grand_angle":     0.40,
+        "vehicule":        0.70
+      }
+    }
+  },
+
+  "scenarios_predefined": {
+    "marche_foire_cotonou_soleil_couchant": {
+      "label": "Marche foire Cotonou — soleil couchant",
+      "outils_actifs": [3, 13, 2, 6, 7, 8, 9, 10],
+      "surcharges_points": {
+        "thermodynamique":      0.50,
+        "micro_saccades":       0.90,
+        "capteur_arri_alexa":   0.95,
+        "atmosphere":           0.60
+      }
+    },
+    "montee_zemidjan_pluie": {
+      "label": "Monter dans un zémidjan — il pleut",
+      "outils_actifs": [3, 14, 2, 4, 6, 7, 8, 9, 10],
+      "surcharges_points": {
+        "fluides":              0.95,
+        "caustiques":           0.90,
+        "masse_gravite":        0.85,
+        "aerodynamisme":        0.10
+      }
+    },
+    "voiture_120kmh_vent": {
+      "label": "Voiture à 120 km/h — vent fort",
+      "outils_actifs": [1, 12, 2, 4, 6, 7, 8, 9, 10, 11],
+      "surcharges_points": {
+        "aerodynamisme":        0.95,
+        "friction":             0.90,
+        "muscles_tendons":      0.85,
+        "micro_saccades":       0.70
+      }
+    }
+  }
+}
